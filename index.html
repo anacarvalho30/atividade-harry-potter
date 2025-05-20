@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Landing Page Hogwarts</title>
+  <link rel="stylesheet" href="style.css">
+  <link href="https://fonts.googleapis.com/css2?family=Cinzel+Decorative:wght@700&family=Cormorant+Garamond:wght@400;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+  <header class="hogwarts-header">
+    <img src="https://i.pinimg.com/736x/72/c2/12/72c212937fef7953ce31385b38c15243.jpg" alt="Brasao de Hogwarts" class="crest">
+    <h1><i class="fas fa-hat-wizard"></i> Landing Page Hogwarts </h1>
+    <p class="subtitle">Experimente a magia de Hogwarts!</p>
+  </header>
+
+  <main class="container">
+    <section class="card potion-card">
+      <h2><i class="fas fa-scroll"></i> Lista de Poções</h2>
+      <div class="potion-controls">
+        <input type="text" id="taskInput" placeholder="Nova tarefa mágica..." class="potion-input">
+        <button id="addTaskBtn" class="spell-btn sorting-btn">
+          <i class="fas fa-plus"></i> Adicionar
+        </button>
+      </div>
+      <ul id="taskList" class="potion-list"></ul>
+    </section>
+
+    <div class="hogwarts-grid">
+      <section class="card spell-card">
+        <h2><i class="fas fa-mouse-pointer"></i> Feitiços com o Mouse</h2>
+        <div class="event-buttons">
+          <button id="clickBtn" class="spell-btn">
+            <i class="far fa-hand-pointer"></i> Clique
+          </button>
+          <button id="dblclickBtn" class="spell-btn">
+            <i class="fas fa-mouse"></i> Duplo Clique
+          </button>
+        </div>
+        <div id="mouseArea" class="wand-area">
+          Passe sua varinha aqui
+          <div class="sparkle"></div>
+        </div>
+      </section>
+
+      <section class="card divination-card">
+        <h2><i class="fas fa-keyboard"></i> Presságios do Teclado</h2>
+        <input type="text" id="keyboardInput" placeholder="Digite um encantamento..." class="prophecy-input">
+        <div class="crystal-ball" id="keyLog">...</div>
+      </section>
+    </div>
+
+    <section class="card scroll-card">
+      <h2><i class="fas fa-envelope"></i> Envio de Corujas</h2>
+      <form id="testForm" class="sorting-form">
+        <div class="form-group">
+          <label for="formInput">Nome do Bruxo:</label>
+          <input type="text" id="formInput" placeholder="Digite seu nome mágico...">
+        </div>
+        <div class="form-group">
+          <label for="formSelect">Escolha sua casa:</label>
+          <select id="formSelect">
+            <option value="">Selecione a casa</option>
+            <option value="grifinoria">Grifinória</option>
+            <option value="sonserina">Sonserina</option>
+            <option value="corvinal">Corvinal</option>
+            <option value="lufalufa">Lufa-Lufa</option>
+          </select>
+        </div>
+        <button type="submit" class="spell-btn sorting-btn">
+          <i class="fas fa-paper-plane"></i> Enviar Coruja
+        </button>
+      </form>
+    </section>
+
+    <section class="card sorting-card">
+      <h2><i class="fas fa-clipboard-list"></i> Registro de Magia</h2>
+      <div class="magic-scroll" id="eventLog"></div>
+      <button id="clearLog" class="spell-btn sorting-btn">
+        <i class="fas fa-trash-alt"></i> Limpar Registro
+      </button>
+    </section>
+  </main>
+
+  <footer class="hogwarts-footer">
+    <p>© 2025 Hogwarts Interativa</p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
