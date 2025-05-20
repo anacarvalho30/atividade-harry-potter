@@ -1,8 +1,8 @@
 document.addEventListener("DOMContentLoaded", () => {
-    // Evento load
+    
     alert("⚡ Bem-vindo(a) à Hogwarts! Sua jornada mágica começa agora.");
   
-    // Registro de Magia
+
     const eventLog = document.getElementById("eventLog");
     const clearLogBtn = document.getElementById("clearLog");
   
@@ -16,12 +16,11 @@ document.addEventListener("DOMContentLoaded", () => {
       eventLog.innerHTML = "";
     });
   
-    // Evento resize
     window.addEventListener("resize", () => {
       logEvent("📐 Janela redimensionada em " + new Date().toLocaleTimeString());
     });
   
-    // Adicionar Poções (Lista de Tarefas)
+    
     const taskInput = document.getElementById("taskInput");
     const addTaskBtn = document.getElementById("addTaskBtn");
     const taskList = document.getElementById("taskList");
@@ -43,7 +42,7 @@ document.addEventListener("DOMContentLoaded", () => {
       }
     });
   
-    // Feitiços com o Mouse
+    
     const clickBtn = document.getElementById("clickBtn");
     const dblclickBtn = document.getElementById("dblclickBtn");
   
@@ -57,7 +56,7 @@ document.addEventListener("DOMContentLoaded", () => {
       logEvent("✨ Duplo clique");
     });
   
-    // Presságios do Teclado
+
     const keyboardInput = document.getElementById("keyboardInput");
     const keyLog = document.getElementById("keyLog");
   
@@ -66,7 +65,7 @@ document.addEventListener("DOMContentLoaded", () => {
       logEvent(`🔤 Tecla pressionada: ${e.key}`);
     });
   });
-  // Área da varinha (efeitos com mouse)
+ 
 const mouseArea = document.getElementById("mouseArea");
 const sparkle = mouseArea.querySelector(".sparkle");
 
